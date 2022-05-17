@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #43cea2; 
+  background: -webkit-linear-gradient(
+    to right,
+    #360875,
+    #570cc0
+  ); 
+  background: linear-gradient(
+    to right,
+    #360875,
+    #570cc0
+  ); 
+  font-family: "Varela Round", sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px;
+}
+
+.content-todo {
+  display: grid;
+  grid-template-columns: 60%;
+  justify-content: center;
+}
+.title {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #f2f2f2;
+}
+
+.box {
+  margin-bottom: 20px;
+}
+
+.box form input,
+button {
+  border: none;
+  background: #ffffff;
+}
+
+form {
+  display: flex;
+}
+input {
+  width: 100%;
+  color: #222222;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-family: "Varela Round", sans-serif;
+}
+button {
+  color: #5e00ff;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 1.2rem;
+}
+
+.todo {
+  background: #ffffff;
+  color: #222222;
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 1.3rem;
+  padding: 10px;
+  transition: all 500ms ease;
+}
+.todo > ul > li {
+  flex: 1;
+}
+
+.todo-item {
+  width: 100%;
+  padding: 5px;
+}
+
+.todo-container {
+  overflow: auto;
+}
+
+.complete-btn,
+.trash-btn {
+  border: none;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.complete-btn {
+  background-color: #45b658;
+}
+.trash-btn {
+  background-color: #df4141;
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+.select {
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+select {
+  color: #604486;
+  font-family: "Varela Round", sans-serif;
+  width: 100%;
+  cursor: pointer;
+  height: 50px;
+  font-size: 1rem;
+  padding: 0 0 0 10px;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #5e00ff;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    <h4 style="text-align: right">ukistu01-raza</h4>
+    <h2 style="text-align: center"><u>JavaScript Exercise</u></h2>
+    <h3><u>Function</u></h3>
+    <h3>01</h3>
+
+    <!-- The Age Calculator -->
+    <label for="byear">Enter your birth year: </label>
+    <input type="text" id="byear" style="margin-left: 28px" /> <br />
+    <br />
+
+    <label for="bfuture">Enter your future year: </label>
+    <input type="text" id="bfuture" style="margin-left: 20px" />
+
+    <button type="submit" onclick="display()">Submit</button> <br />
+    <p id="pbirth"></p>
+
+    <h3>02</h3>
+
+    <!-- The Temperature Converter -->
+    <!-- celsius -->
+    <label for="byear">Enter the celsius: </label>
+    <input style="margin-left: 56px" type="text" id="celsius" />
+    <button type="submit" onclick="celsius()">Submit</button> <br />
+    <p id="pcelsius"></p>
+
+    <!-- fahrenheit -->
+    <label for="byear">Enter the fahrenheit: </label>
+    <input type="text" style="margin-left: 35px" id="fahrenheit" />
+    <button type="submit" onclick="fahrenheit()">Submit</button> <br />
+    <p id="pfahrenheit"></p>
+
+    <h3><u>Condition</u></h3>
+    <h3>03</h3>
+
+    <!-- The Grade Assigner -->
+    <label for="score">Enter your score: </label>
+    <input style="margin-left: 56px" type="text" id="score" />
+    <button
+      type="submit"
+      id="marksbtn"
+      onclick="assignGrade(document.getElementById('score').value)"
+    >
+      Submit
+    </button>
+    <br />
+    <p id="pscore"></p>
+
+    <h3><u>Switch</u></h3>
+    <h3>04</h3>
+    <!-- get the month -->
+    <label for="month">Enter a month number: </label>
+    <input style="margin-left: 18px" type="text" id="month" />
+    <button type="submit" id="monthbtn" onclick="getMonth()">Submit</button>
+    <br />
+    <p id="pmonth"></p>
+
+    <h3><u>Loop</u></h3>
+    <h3>05</h3>
+    <!-- The even/odd reporter -->
+    <label for="odd_even"> From 0 to 20, the number is even or odd: </label>
+    <p class="podd_even"></p>
+    <!-- JS files goes here  -->
+    <script src="script.js"></script>
+    <script>
+      oddEven();
+    </script>
+
+    <h3>06</h3>
+    <!-- Find Factorial of a positive integer -->
+    <label for="factorial">Enter a positive integer: </label>
+    <input style="margin-left: 12px" type="text" id="factorial" />
+    <button type="submit" id="factorialbtn" onclick="getFactorial()">
+      Submit
+    </button>
+    <br />
+    <p id="pfactorial"></p>
+
+    <h3>07</h3>
+    <label for="fint">Enter a first positive integer: </label>
+    <input style="margin-left: 31px" type="text" id="fint" /> <br />
+    <br />
+    <label for="sint">Enter a second positive integer: </label>
+    <input style="margin-left: 12px" type="text" id="sint" />
+    <button type="submit" id="lcm" onclick="lcm()">Submit</button>
+    <br />
+    <p id="plcm"></p>
+
+    <!-- JS files goes here  -->
+    <script src="script.js"></script>
+  </body>
+</html>

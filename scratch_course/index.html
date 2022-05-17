@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    <!-- The Age Calculator -->
+    <label for="byear">Enter your birth year: </label>
+    <input type="text" id="byear" style="margin-left: 28px" /> <br />
+    <br />
+
+    <label for="bfuture">Enter your future year: </label>
+    <input type="text" id="bfuture" style="margin-left: 20px" />
+
+    <button type="submit" onclick="display()">Submit</button> <br />
+    <br />
+
+    <!-- The Temperature Converter -->
+    <!-- celsius -->
+    <label for="byear">Enter the celsius: </label>
+    <input style="margin-left: 56px" type="text" id="celsius" />
+    <button type="submit" onclick="celsius()">Submit</button> <br />
+    <br />
+
+    <!-- fahrenheit -->
+    <label for="byear">Enter the fahrenheit: </label>
+    <input type="text" style="margin-left: 35px" id="fahrenheit" />
+    <button type="submit" onclick="fahrenheit()">Submit</button> <br />
+    <br />
+
+    <!-- output -->
+    <p id="pbirth"></p>
+    <p id="pcelsius"></p>
+    <p id="pfahrenheit"></p>
+
+    <!-- JS files goes here  -->
+    <script src="script.js"></script>
+  </body>
+</html>
